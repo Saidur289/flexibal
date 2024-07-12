@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            border: 2px solid tomato;
+            background-color: aquamarine;
+            padding: 10px;
+
+        }
+        .container{
+            display: flex;
+            gap: 10px;
+        }
+        .item{
+            width: 200px;
+            height: 100px;
+            border: 2px solid black;
+        }
+        .container2{
+            display: flex;
+            flex: wrap;
+        }
+        @media screen and (max-width: 576px){
+            .container{
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>flexbox</h1>
+    <div class="container">
+        <div class="box">
+            <h1>FIRST BOX</h1>
+            <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore necessitatibus deserunt deleniti velit iure, obcaecati in repellat quas ratione accusantium?Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore necessitatibus deserunt deleniti velit iure, obcaecati Lorem, ipsum dolor sit amet consectetur adipisicing elit. Inventore necessitatibus deserunt deleniti velit iure, obcaecati </P>
+        </div>
+        <div class="box">
+            <h1>SECOND BOX</h1>
+            <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus in eveniet repellendus magni provident consequatur est tempora labore corrupti quibusdam.Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus in eveniet repellendus magni provident consequatur est Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus in eveniet repellendus magni provident consequatur est </P>
+        </div>
+
+    </div>
+    <div class="container2">
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>
+        <div class="item"></div>{item-$}
+    </div>
+</body>
+
+</html>
